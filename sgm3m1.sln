@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sgm3m1", "sgm3m1\sgm3m1\sgm3m1.csproj", "{545169C8-87BA-403F-8251-2D1568441499}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "sgm3m1Content", "sgm3m1\sgm3m1Content\sgm3m1Content.contentproj", "{6A10B004-F1D6-4EFF-871D-018974D0ED2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Any CPU = Release|Any CPU
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{545169C8-87BA-403F-8251-2D1568441499}.Debug|Any CPU.ActiveCfg = Debug|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Release|Any CPU.ActiveCfg = Release|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{545169C8-87BA-403F-8251-2D1568441499}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{6A10B004-F1D6-4EFF-871D-018974D0ED2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A10B004-F1D6-4EFF-871D-018974D0ED2C}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{6A10B004-F1D6-4EFF-871D-018974D0ED2C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A10B004-F1D6-4EFF-871D-018974D0ED2C}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

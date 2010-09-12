@@ -1,0 +1,17 @@
+*.scc
+*.suo
+*.vssscc
+*.vspscc
+bin/
+*.webinfo
+obj/
+*response.txt
+*.bak
+Copy of *
+*.user
+*.BACKUP.*
+*.LOCAL.*
+*.REMOTE.*
+*.orig
+BPASCorrespondence/
+_ReSharper*
