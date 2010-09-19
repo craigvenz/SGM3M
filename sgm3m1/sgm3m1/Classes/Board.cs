@@ -5,7 +5,14 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    class Board
+    public class Board
     {
+        int width;
+        int height;
+
+        Tile[,] data;
+
+
+
     }
 }
