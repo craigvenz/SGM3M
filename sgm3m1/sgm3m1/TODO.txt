@@ -1,0 +1,35 @@
+﻿Make a decision on 1) using xna rectangle, 2) system.drawing.size, or 3) sticking with local definition of an Extents/Rectangle/Size struct.
+- Pros & cons:
+1) c: dependency on xna framework
+p: easier to use xna framework
+p: no conversion needed
+c: not platform agnostic
+2) p: ?
+c: dependency on system.drawing (not that that matters much since the dependency on .net is pretty much guaranteed)
+c: not used natively by xna anyway so conversion is always needed
+3) p: platform agnostic
+p: control over implementation
+p: possibly just a wrapper over platform versions
+c: can't be passed to any xna calls
+c: conversion of size structs to xna rectangles/whatever - lots of garbage? (premature optimization)
+c: conversion class and such has to be written manually - smacks of NIH syndrome
+
+Decision: #3.
+
+Goals:
+
+*** create tests first then write classes to pass the tests, then write tests to fail against the classes and fix. rinse repeat. ***
+
+get a board class working
+get a board fillable with tiles/symbols? is tile a good name? possibly rename
+define an interface for matching behavior
+
+Thoughts:
+
+Rx? is rx compatible with XNA? can't see why not
+Write AI / Human behaviour class - Behaviour Interface, which produces an observable?
+AI - takes a matching behavior and a board, and a random seed, and produces a (collection of) moves
+human - assigned a matching behavior which is enforced and produces a collection of moves
+playback - assigned a set of prerecorded moves and plays back
+
+
