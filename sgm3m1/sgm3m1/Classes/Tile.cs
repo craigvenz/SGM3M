@@ -5,7 +5,8 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    class Tile
+    public interface Tile
     {
+
     }
 }
