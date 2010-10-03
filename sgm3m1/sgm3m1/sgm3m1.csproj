@@ -88,7 +88,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Board.cs" />
+    <Compile Include="Classes\EmptyTile.cs" />
+    <Compile Include="Classes\Entity.cs" />
+    <Compile Include="Classes\Extents.cs" />
+    <Compile Include="Classes\NormalTile.cs" />
+    <Compile Include="Classes\SpecialTile.cs" />
     <Compile Include="Classes\Tile.cs" />
+    <Compile Include="Classes\TileTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />

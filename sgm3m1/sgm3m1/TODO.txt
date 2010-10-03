@@ -26,6 +26,10 @@ define an interface for matching behavior
 
 Thoughts:
 
+Remember: TDD 
+1) You aren't gunna need it
+2) Do the simplest possible thing that could work
+
 Rx? is rx compatible with XNA? can't see why not
 Write AI / Human behaviour class - Behaviour Interface, which produces an observable?
 AI - takes a matching behavior and a board, and a random seed, and produces a (collection of) moves

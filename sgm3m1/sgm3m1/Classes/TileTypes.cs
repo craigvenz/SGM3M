@@ -5,9 +5,10 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    public interface Tile
+    public enum TileTypes
     {
-        TileTypes Type { get; }
+        Empty,
+        Normal,
+        Special
     }
-
 }

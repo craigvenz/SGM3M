@@ -5,20 +5,18 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    public struct Extents
-    {
-        public int Width { get; set; }
-        public int Height { get; set; }
-    }
     public class Board
     {
-        public Extents Size { get; private set; }
-        Tile[,] data;
+        private Extents _size;
+        private Tile[,] data;
 
         public Board(int w, int h)
         {
-            Size.Width = w;
-            Size.Height = h;
+            _size.Width = w;
+            _size.Height = h;
+            data = new Tile[w, h]();
         }
+
+        public Extents Size { get; private set; }
     }
 }
