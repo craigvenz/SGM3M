@@ -21,7 +21,7 @@ namespace sgm3m1.Classes
         {
             _random = new Random(seed);
         }
-        // should be strategy pattern
+        // candidate for strategy pattern
         public void Generate(Board target)
         {
             for (int x = 0; x < target.Size.Width; x++)
