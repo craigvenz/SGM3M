@@ -18,8 +18,8 @@ namespace Tests
         public void BoardTest()
         {
             Board b = new Board(10, 10);
-            Assert.Equal(b.Size.Width, 10);
-            Assert.Equal(b.Size.Height, 10);
+            Assert.Equal(10,b.Size.Width);
+            Assert.Equal(10,b.Size.Height);
         }
 
     }

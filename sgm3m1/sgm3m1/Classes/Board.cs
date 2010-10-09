@@ -12,11 +12,44 @@ namespace sgm3m1.Classes
 
         public Board(int w, int h)
         {
-            _size.Width = w;
-            _size.Height = h;
-            data = new Tile[w, h]();
+            _size = new Extents();
+            Size.Width = w;
+            Size.Height = h;
+            data = new Tile[w, h];
         }
 
-        public Extents Size { get; private set; }
+        // encapsulation violation
+        public Tile[,] Data
+        {
+            get
+            {
+                return data;
+            }
+        }
+        
+        // Violation of SRP?
+        public static Board CreateEmptyBoard(int w, int h)
+        {
+            Board b = new Board(w, h);
+            for (int x = 0; x < b.Size.Width; x++)
+                for (int y = 0; y < b.Size.Height; y++)
+                	b.data[x,y]=new EmptyTile();
+            return b;
+        }
+
+        // encapsulation violation?
+        public Extents Size
+        {
+            get
+            {
+                return _size;
+            }
+            set
+            {
+                _size = value;
+            }
+        }
+
+
     }
 }
