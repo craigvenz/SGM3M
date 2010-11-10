@@ -1,30 +1,30 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace sgm3m1.Classes
 {
     public class Board
     {
         private Extents _size;
-        private Tile[,] data;
+        private Tile[,] _data;
 
         public Board(int w, int h)
         {
             _size = new Extents();
             Size.Width = w;
             Size.Height = h;
-            data = new Tile[w, h];
+            _data = new Tile[w, h];
         }
 
         // encapsulation violation
-        public Tile[,] Data
+        public Tile DataAt(int x,int y)
         {
-            get
-            {
-                return data;
-            }
+            //throw if out of range
+            return _data[x, y];
+        }
+
+        public void SetDataAt(int x,int y,Tile t)
+        {
+            _data[x, y] = t;
         }
         
         // Violation of SRP?
@@ -33,7 +33,7 @@ namespace sgm3m1.Classes
             Board b = new Board(w, h);
             for (int x = 0; x < b.Size.Width; x++)
                 for (int y = 0; y < b.Size.Height; y++)
-                	b.data[x,y]=new EmptyTile();
+                	b._data[x,y]=(Tile)new EmptyTile();
             return b;
         }
 

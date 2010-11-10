@@ -93,6 +93,7 @@
     <Compile Include="Classes\Tiles\EmptyTile.cs" />
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\Extents.cs" />
+    <Compile Include="Classes\Tiles\EntityBase.cs" />
     <Compile Include="Classes\Tiles\NormalTile.cs" />
     <Compile Include="Classes\Tiles\SpecialTile.cs" />
     <Compile Include="Classes\Tile.cs" />

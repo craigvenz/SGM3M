@@ -5,7 +5,7 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    public class SpecialTile : Tile
+    public class SpecialTile : EntityBase, Tile
     {
         public TileTypes Type
         {

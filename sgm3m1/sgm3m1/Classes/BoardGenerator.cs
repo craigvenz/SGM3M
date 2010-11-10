@@ -5,13 +5,12 @@ using System.Text;
 
 namespace sgm3m1.Classes
 {
-    class BoardGenerator
+    public class BoardGenerator
     {
         private Random _random;
 
-        public BoardGenerator()
+        public BoardGenerator() : this(new Random())
         {
-            BoardGenerator(new Random());
         }
         public BoardGenerator(Random x) 
         {
@@ -25,19 +24,20 @@ namespace sgm3m1.Classes
         public void Generate(Board target)
         {
             for (int x = 0; x < target.Size.Width; x++)
+            {
                 for (int y = 0; y < target.Size.Height; y++)
                 {
-                    Tile z;
-                    switch ((TileTypes)_random.Next(TileTypes.Normal, TileTypes.Special))
+                    Tile z=null;
+                    switch ((TileTypes)_random.Next((int)TileTypes.Normal, (int)TileTypes.Special))
                     {
                     	case TileTypes.Normal:
-                    		z=new NormalTile();
+                            z = (Tile)new NormalTile();
                     		break;
                         case TileTypes.Special:
-                            z=new SpecialTile();
+                            z=(Tile)new SpecialTile();
                             break;
                     }
-                    target.Data[x,y] = z;
+                    target.SetDataAt(x,y, z);
                 }
             }                        
         }
