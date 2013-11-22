@@ -3,9 +3,7 @@
 *.vssscc
 *.vspscc
 bin/
-*.webinfo
 obj/
-*response.txt
 *.bak
 Copy of *
 *.user
@@ -13,5 +11,4 @@ Copy of *
 *.LOCAL.*
 *.REMOTE.*
 *.orig
-BPASCorrespondence/
 _ReSharper*
